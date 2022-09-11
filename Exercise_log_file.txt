@@ -74,8 +74,7 @@ int main()
 	char str[100];
 	printf("please enter a number\n");
 	scanf("%d", &num);
-	LogEvent("The user entered a number : %d\n", num);
-	LogEvent("The number the user entered is\n");
+	sprintf(str,"The user entered a number : %d\n", num);
 	LogEvent(str);
 	file_with_numbers(num);
 	LogEvent("End of log And run\n\n\n");
